@@ -1,30 +1,22 @@
 
 <template>
-    <div class="weui-tabbar">
-        <router-link to="/" class="weui-tabbar__item weui-bar__item--on">
-            <div class="weui-tabbar__icon"> <i class="sstfont sst-shouye"></i> </div>
-            <p class="weui-tabbar__label">今日</p>
-        </router-link>
-        <router-link to="/history" class="weui-tabbar__item weui-bar__item--on">
-            <div class="weui-tabbar__icon"> <i class="sstfont sst-xuetang"></i> </div>
-            <p class="weui-tabbar__label">历史</p>
-        </router-link>
-    </div>
+    <el-row align="bottom">
+        <el-col :span="12">
+            <el-col :span="6" :offset="6">
+                <router-link to="/">
+                    <div><i class="el-icon-edit"></i></div>
+                    <div>今日</div>
+                </router-link>
+            </el-col>
+        </el-col>
+    
+        <el-col :span="12">
+            <el-col :span="6" :offset="6">
+               <router-link to="/history">
+                <div><i class="el-icon-menu"></i></div>
+                <div>历史</div>
+            </router-link>
+            </el-col>
+        </el-col>
+    </el-row>
 </template>
-
-<style>
-    .weui-tabbar {
-        position: fixed;
-        z-index: 2;
-    }
-    .weui-tabbar {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: flex;
-        position: absolute;
-        z-index: 500;
-        bottom: 0;
-        width: 100%;
-        background-color: #f7f7fa;
-    }
-</style>

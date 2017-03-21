@@ -6,16 +6,12 @@
 
 <style>
     .bar {
-        position: fixed;
         right: 0;
         left: 0;
-        z-index: 10;
         height: 2.2rem;
         padding-right: .5rem;
         padding-left: .5rem;
         background-color: #0993c7;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
         color: #FFF;
     }
     
@@ -38,7 +34,7 @@
 export default {  
         data () {  
             return {  
-                titleText: '消费记录'
+                titleText: '每日消费'
             }  
         }
 }

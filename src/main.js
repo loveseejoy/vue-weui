@@ -2,9 +2,12 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import router from './router/index'
-
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 import PageHead from './components/Header'
 import PageFoot from './components/Footer'
+
+Vue.use(ElementUI)
 
  
 Vue.config.productionTip = false
