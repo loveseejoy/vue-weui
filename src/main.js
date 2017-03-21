@@ -6,7 +6,7 @@ import router from './router/index'
 import PageHead from './components/Header'
 import PageFoot from './components/Footer'
 
-
+ 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
